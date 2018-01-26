@@ -7,5 +7,5 @@
   'data': [
   ],
   'category': 'Theme/Creative',
-  'depends': ['website', 'sale'],
+  'depends': ['website'],
 }
