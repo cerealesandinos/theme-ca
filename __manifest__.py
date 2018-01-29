@@ -10,5 +10,5 @@
   'css': ['static/src/css/css.css'],
 
   'category': 'Generic Modules/Others',
-  'depends': ['website',],
+  'depends': ['website'],
 }
