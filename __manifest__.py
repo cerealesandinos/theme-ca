@@ -7,7 +7,8 @@
   'data': [
   'views/layout.xml'
   ],
+  'css': ['static/src/css/css.css'],
 
-  'category': 'Theme/Creative',
-  'depends': ['website'],
+  'category': 'Generic Modules/Others',
+  'depends': ['website',],
 }
