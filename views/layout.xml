@@ -12,6 +12,7 @@
       <xpath expr="." position="inside">
 <!--These links will be called when loading your Odoo -->
             <link rel="stylesheet" href="/theme-ca/static/src/css/css.css"/>
+            <link rel="stylesheet" href="/theme-ca/static/src/css/less.less"/>
         </xpath>
 
       <!-- Add an element after the top menu  -->
