@@ -5,9 +5,11 @@
   'author':'Esteban',
 
   'data': [
-  'views/layout.xml'
+  'views/layout.xml',
+  'assets.xml'
   ],
   'css': ['static/src/css/css.css'],
+  'less': ['static/src/less/less.less'],
 
   'category': 'Generic Modules/Others',
   'depends': ['website'],
