@@ -5,7 +5,12 @@
   'author':'Esteban',
 
   'data': [
+  'views/layout.xml',
+  'assets.xml'
   ],
-  'category': 'Theme/Creative',
+  'css': ['static/src/css/css.css'],
+  'less': ['static/src/less/less.less'],
+
+  'category': 'Generic Modules/Others',
   'depends': ['website'],
 }
