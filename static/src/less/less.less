@@ -1,10 +1,5 @@
 
 
-
-
-
-/* END CEREALES */
-
 /* ================== COLOR PRESET 2 ================= */
 
 @colorPreset2_color1:             #D6BFDD; // soft purple
@@ -19,6 +14,28 @@
 @colorPreset2_color4:            #fdd26e; // yellow
 @colorPreset2_color4_dark:      darken(@colorPreset2_color4, 10%);
 @colorPreset2_color4_light:        lighten(@colorPreset2_color4, 5%);
+
+/* Correct bugs */
+
+.navbar-right .dropdown-menu {
+  left: auto !important;
+  right: auto !important;
+}
+
+/*======= Color aplicado ===== */
+#wrapwrap {
+  #top_menu {
+      background: @colorPreset2_color3;
+  }
+  p {
+    font-size: inherit;
+  }
+}
+
+.navbar-default {
+
+}
+
 
 /*================Espaciados===========*/
 
@@ -40,11 +57,9 @@
         color: white !important;
         padding-top: 11.2px;
         font-weight: 700px;
-
     }
 
 }
-
 
 .espaciado-m {
     line-height: 35px !important;
@@ -101,6 +116,8 @@
 	src: url('webfonts/329A23_3_0.eot?#iefix') format('embedded-opentype'), url('//cerealesandinos.com/webfonts/329A23_3_0.woff2') format('woff2'), url('//cerealesandinos.com/webfonts/329A23_3_0.woff') format('woff'), url('//cerealesandinos.com/webfonts/329A23_3_0.ttf') format('truetype');
 }
 
+#wrapwrap {
+
 .adria-l {
     font-family: AdriaSlab-Medium;
     font-size: 34px;
@@ -127,6 +144,7 @@
     padding-top: 40px;
     border-top: 3px dotted rgb(239, 66, 111);
     border-color: rgb(239, 66, 111);
+}
 }
 
 /*cambios hechos en el archivo theme*/
