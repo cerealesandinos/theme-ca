@@ -6,8 +6,9 @@
 
   'data': [
   'views/layout.xml',
-  'views/assets.xml'
+  'views/assets.xml',
   ],
+
   'css': ['static/src/css/css.css'],
   'less': ['static/src/less/less.less'],
 
