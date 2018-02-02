@@ -87,14 +87,13 @@ body {
 /*cambios hechos en el archivo theme*/
 
 
-width: 257px;
-   bottom: 0;
 /*=============about us==========*/
 
 
 .bloque-cita {
    height: 70px;
 }
+
 .product-title, .product-accessories, .product-miniature{
    text-align: center;
    background-size: cover;
@@ -109,7 +108,7 @@ width: 257px;
    line-height: 32px;
    text-shadow: 2px 2px 5px black;
    height: 256px;
-   padding-right: 375px !importat;
+   padding-right: 375px !important;
 }
 .margin-about-us{
    margin-right: 360px !important;
@@ -204,7 +203,7 @@ img, .featured-products img, .product-accessories img, .product-miniature img {
 /*==========productos homepage=========*/
 
 
-.cover{ //para lo que le rodea al producto
+.cover{
    width: 257px !important;
    height: 383px !important;
    position: relative;
@@ -283,7 +282,6 @@ img, .featured-products img, .product-accessories img, .product-miniature img {
 
 .btn {
     padding: 10px 20px;
-    .transition (all 0.3s ease-out);
     border-width: 0px;
     display: inline-block;
     line-height: 1.25;
