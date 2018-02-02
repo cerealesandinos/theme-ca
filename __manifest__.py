@@ -7,7 +7,6 @@
   'data': [
   'views/layout.xml',
   'views/assets.xml',
-  'views/option_font_ubuntu.xml',
   ],
 
   'css': ['static/src/css/css.css'],
