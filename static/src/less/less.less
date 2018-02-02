@@ -10,7 +10,7 @@
 @colorPreset2_color2_light:        lighten(@colorPreset2_color2, 10%);
 @colorPreset2_color3:            #EF426F; // corporate
 @colorPreset2_color3_dark:         darken(@colorPreset2_color3, 10%);
-@colorPreset2_color3_light:        lighten(@colorPreset2_color3, 30%);
+@colorPreset2_color3_light:        lighten(@colorPreset2_color3, 20%);
 @colorPreset2_color4:            #fdd26e; // yellow
 @colorPreset2_color4_dark:      darken(@colorPreset2_color4, 10%);
 @colorPreset2_color4_light:        lighten(@colorPreset2_color4, 5%);
@@ -24,51 +24,74 @@
 
 /*======= Color aplicado ===== */
 #wrapwrap {
-  #top_menu {
+
+  .navbar-default {
       background: @colorPreset2_color3;
+      #top_menu li a {
+        color: white;
+        :hover {
+          color: @colorPreset2_color4_light;
+        }
+        .dropdown-menu li > a, .navbar-collapse li > a {
+          color: #555555;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+          border-width: 3px 0px 0px;
+          border-style: solid;
+          border-color: rgb(253, 210, 110);
+          :hover {
+            color: @colorPreset2_color3_dark;
+          }
+        }
+
+        .navbar-nav {
+          > .open > a, {
+            :hover, :focus, {
+              background-color: @colorPreset2_color3_dark;
+            }
+          }
+        }
+
+      }
   }
   p {
     font-size: inherit;
   }
+
+  .js_sale .breadcrumb li a {
+    color: @colorPreset2_color3;
+      :hover {
+        color: @colorPreset2_color3_dark;
+      }
+
+    }
+    #add_to_cart {
+      background-color: @colorPreset2_color3;
+    }
+    .form-inline .input-group {
+  }
+
+  > #footer .container h4 {
+    color: white;
+  }
 }
 
-.navbar-default {
-
-}
 
 
 /*================Espaciados===========*/
 
 
 #wrapwrap {
-        font-family: "AdriaSlab-Medium";
-    h1, h2, h3, h4, h5, h6 {
-        font-family: "monstro_solidregular";
-        font-weight: 700;
-        line-height: 1.1em;
-    }
-    h2{
-        font-size: 66px;
-        font-weight: 600;
-    }
-    .h3 {
-        text-transform: capitalize;
-        font-size: 16px ;
-        color: white !important;
-        padding-top: 11.2px;
-        font-weight: 700px;
-    }
 
-}
 
 .espaciado-m {
     line-height: 35px !important;
-}
+  }
 .espaciado-l {
     line-height: 51.2px;
-}
+  }
 .sombra {
     text-shadow: 2px 2px 5px rgba(0,0,0,0.75);
+  }
 }
 
 /*cambios hechos en el archivo ubuntu*/
@@ -117,34 +140,53 @@
 }
 
 #wrapwrap {
+	font-family: "AdriaSlab-Medium";
 
-.adria-l {
-    font-family: AdriaSlab-Medium;
-    font-size: 34px;
-}
-.defying-l {
-    font-family: KGDefyingGravityBounce;
-    font-size: 70px;
-}
-.defying-m {
-    font-family: KGDefyingGravityBounce;
-    font-size: 40px !important;
-}
-.nexa-m {
-    font-family: NexaScript-Bold;
-    font-size: 51.6px
-}
-.h2-contenidos {
+  .adria-l {
+      font-family: AdriaSlab-Medium;
+      font-size: 34px;
+  }
+  .defying-l {
+      font-family: KGDefyingGravityBounce;
+      font-size: 70px;
+  }
+  .defying-m, h4{
+      font-family: KGDefyingGravityBounce;
+      font-size: 40px !important;
+  }
+  .nexa-m {
+      font-family: NexaScript-Bold;
+      font-size: 51.6px
+  }
+.h2-contenidos, h2 {
     color: #ef426f;
     font-size: 36px;
     font-family: NexaScript-Bold;
     margin-top: 40px;
-}
+    font-weight: 600;
+    }
+
 .linea-top {
     padding-top: 40px;
     border-top: 3px dotted rgb(239, 66, 111);
     border-color: rgb(239, 66, 111);
+  }
+
+
+
+h1 {
+  font-family: "monstro_solidregular";
+  font-weight: 700;
+  line-height: 1.1em;
 }
+
+.h3 {
+  text-transform: capitalize;
+  font-size: 16px ;
+  color: white !important;
+  padding-top: 11.2px;
+  font-weight: 700px;
+  }
 }
 
 /*cambios hechos en el archivo theme*/
