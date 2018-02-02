@@ -1,8 +1,8 @@
 {
   'name':'CA theme',
-  'description': 'CSS to adapt Loftspace',
+  'description': 'CSS to adapt Loftspace and Beauty applying CA Corporate style',
   'version':'1.0',
-  'author':'Esteban',
+  'author':'Esteban Tapia',
 
   'data': [
   'views/layout.xml',
@@ -13,5 +13,5 @@
   'less': ['static/src/less/less.less'],
 
   'category': 'Generic Modules/Others',
-  'depends': ['website'],
+  'depends': ['website','theme_loftspace','theme_beauty'],
 }
