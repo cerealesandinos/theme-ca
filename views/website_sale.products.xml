@@ -17,23 +17,25 @@
                     <div class="row">
                         <div class="hidden" id="products_grid_before"/>
                         <div class="col-md-12" id="products_grid">
-                            <div>
-                                <div t-foreach="range(0,rows)" t-as="row" t-attf-width="#{100/rows}%"/>
+
+
+
                                     <div t-foreach="bins" t-as="tr_product">
                                         <t t-foreach="tr_product" t-as="td_product">
                                             <t t-if="td_product">
                                                 <t t-set="product" t-value="td_product['product']"/>
-                                                <div t-att-colspan="td_product['x'] != 1 and td_product['x']" t-att-rowspan="td_product['y'] != 1 and td_product['y']" t-attf-class="oe_product oe_grid oe-height-#{td_product['y']*2} #{ td_product['class'] }">
+                                                <div t-attf-class="oe_product oe_grid col-sm-6 col-md-4 #{ td_product['class'] }">
                                                     <div class="oe_product_cart" t-att-data-publish="product.website_published and 'on' or 'off'">
                                                         <t t-set="product_image_big" t-value="td_product['x']+td_product['y'] &gt; 2"/>
                                                         <t t-call="website_sale.products_item"/>
                                                     </div>
                                                 </div>
                                             </t>
-                                            <td t-if="not td_product" class="oe-height-2"/>
+                                            <div t-if="not td_product" class="oe-height-2"/>
                                         </t>
                                     </div>
-                            </div>
+
+
                             <t t-if="not bins">
                                 <div class="text-center text-muted oe_product">
                                     <h3 class="css_editable_display">No product defined.</h3>
