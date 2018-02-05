@@ -87,120 +87,121 @@
     font-size: inherit;
   }
 
-          #products_grid_before .category-name {
-            text-transform: none;
-            font-size: 2em;
-          }
-
-} //end wrapwrap
-
-/*cambios hechos en el archivo theme*/
-
-/* ================== COLOR PRESET 2 ================= */
-
-@colorPreset2_color1:             #D6BFDD; // soft purple
-@colorPreset2_color1_dark:      darken(@colorPreset2_color1, 10%);
-@colorPreset2_color1_light:     lighten(@colorPreset2_color1, 5%);
-@colorPreset2_color2:             #B9DCD2; // light turquoise
-@colorPreset2_color2_dark:         darken(@colorPreset2_color2, 10%);
-@colorPreset2_color2_light:        lighten(@colorPreset2_color2, 10%);
-@colorPreset2_color3:            #EF426F; // corporate
-@colorPreset2_color3_dark:         darken(@colorPreset2_color3, 10%);
-@colorPreset2_color3_light:        lighten(@colorPreset2_color3, 20%);
-@colorPreset2_color4:            #fdd26e; // yellow
-@colorPreset2_color4_dark:      darken(@colorPreset2_color4, 10%);
-@colorPreset2_color4_light:        lighten(@colorPreset2_color4, 5%);
-
-/* Correct bugs */
-
-.navbar-right .dropdown-menu {
-  left: auto !important;
-  right: auto !important;
-}
-
-/*======= Color aplicado ===== */
-#wrapwrap {
-  a {
-    color: @colorPreset2_color3;
-    :hover, a:focus {
-      color: @colorPreset2_color3_dark;
-    }
+  #products_grid_before .category-name {
+    text-transform: none;
+    font-size: 2em;
   }
 
-  .navbar-default {
-    background: @colorPreset2_color3;
-    box-shadow: 0px 0px 20px black;
+  } //end wrapwrap
 
-    #top_menu {
-      > li a {
-        color: white;
-        :hover {
-          color: @colorPreset2_color4_light;
-        }
+  /*cambios hechos en el archivo theme*/
+
+  /* ================== COLOR PRESET 2 ================= */
+
+  @colorPreset2_color1:             #D6BFDD; // soft purple
+  @colorPreset2_color1_dark:      darken(@colorPreset2_color1, 10%);
+  @colorPreset2_color1_light:     lighten(@colorPreset2_color1, 5%);
+  @colorPreset2_color2:             #B9DCD2; // light turquoise
+  @colorPreset2_color2_dark:         darken(@colorPreset2_color2, 10%);
+  @colorPreset2_color2_light:        lighten(@colorPreset2_color2, 10%);
+  @colorPreset2_color3:            #EF426F; // corporate
+  @colorPreset2_color3_dark:         darken(@colorPreset2_color3, 10%);
+  @colorPreset2_color3_light:        lighten(@colorPreset2_color3, 20%);
+  @colorPreset2_color4:            #fdd26e; // yellow
+  @colorPreset2_color4_dark:      darken(@colorPreset2_color4, 10%);
+  @colorPreset2_color4_light:        lighten(@colorPreset2_color4, 5%);
+
+  /* Correct bugs */
+
+  .navbar-right .dropdown-menu {
+    left: auto !important;
+    right: auto !important;
+  }
+
+  /*======= Color aplicado ===== */
+  #wrapwrap {
+    a {
+      color: @colorPreset2_color3;
+      :hover, a:focus {
+        color: @colorPreset2_color3_dark;
       }
-      .dropdown-menu {
-        box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
-        border-width: 3px 0px 0px;
-        border-style: solid;
-        border-color: @colorPreset2_color4;
+    }
 
+    .navbar-default {
+      background: @colorPreset2_color3;
+      box-shadow: 0px 0px 20px black;
+
+      #top_menu {
         > li a {
-          color: #555555;
+          color: white;
+          :hover {
+            color: @colorPreset2_color4_light;
+          }
+        }
+        .dropdown-menu {
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+          border-width: 3px 0px 0px;
+          border-style: solid;
+          border-color: @colorPreset2_color4;
+
+          > li a {
+            color: #555555;
+            :hover {
+              color: @colorPreset2_color3_dark;
+            }
+          }
+        }
+        .navbar-nav {
+          > .open > a, {
+            :hover, :focus, {
+              background-color: @colorPreset2_color3_dark;
+            }
+          }
+        }
+
+        } //end top menu
+        } // end navbar
+
+
+        .js_sale .breadcrumb li a {
+          color: @colorPreset2_color3;
           :hover {
             color: @colorPreset2_color3_dark;
           }
-        }
-      }
-      .navbar-nav {
-        > .open > a, {
-          :hover, :focus, {
-            background-color: @colorPreset2_color3_dark;
+          } // end breadcrum
+
+          #add_to_cart {
+            background-color: @colorPreset2_color3;
           }
-        }
-      }
-
-      } //end top menu
-      } // end navbar
-
-
-      .js_sale .breadcrumb li a {
-        color: @colorPreset2_color3;
-        :hover {
-          color: @colorPreset2_color3_dark;
-        }
-        } // end breadcrum
-
-        #add_to_cart {
-          background-color: @colorPreset2_color3;
-        }
-        .form-inline .input-group {
-        }
-
-        > #footer > footer .container {
-          h3, h4, h5  {
-            color: white;
+          .form-inline .input-group {
           }
-        }
 
-        #products_grid_before ul.nav-stacked li a:hover, #products_grid_before ul.nav-stacked li a:focus {
-          background-color: @colorPreset2_color3;
-          color: @colorPreset2_color4_dark;
-        }
-
-        #website_sale_recommended_products {
-          border-top: 3px solid @colorPreset2_color3;
-          h3 {
-            color: @colorPreset2_color3;
+          > #footer > footer .container {
+            h3, h4, h5  {
+              color: white;
+            }
           }
-        }
 
-        #products_grid_before .category-name {
-          background-color: @colorPreset2_color4;
-        }
+          #products_grid_before ul.nav-stacked li a:hover, #products_grid_before ul.nav-stacked li a:focus {
+            background-color: @colorPreset2_color3;
+            color: @colorPreset2_color4_dark;
+          }
 
-        #product_details {
-          H1 {
-            color: @colorPreset2_color3;
+          #website_sale_recommended_products {
+            border-top: 3px solid @colorPreset2_color3;
+            h3 {
+              color: @colorPreset2_color3;
+            }
+          }
+
+          #products_grid_before .category-name {
+            background-color: @colorPreset2_color4;
+          }
+
+          #product_details {
+            H1 {
+              color: @colorPreset2_color3;
+            }
           }
 
           .btn {
@@ -236,133 +237,133 @@
             }
           }
 
-        } // end wrapwrap
-        /*================Espaciados===========*/
+          } // end wrapwrap
+          /*================Espaciados===========*/
 
-        #wrapwrap {
-          .sombra {
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.75);
+          #wrapwrap {
+            .sombra {
+              text-shadow: 2px 2px 5px rgba(0,0,0,0.75);
+            }
+            .control-label {
+              margin: 5px 20px;
+            }
           }
-          .control-label {
-            margin: 5px 20px;
+
+
+          /*=============about us===============*/
+
+          .texto-descriptivo {
+            color: #878787;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 16px;
+            text-align: justify;
           }
-        }
+
+          /*=============about us==========*/
+
+          .product-title, .product-accessories, .product-miniature{
+
+          }
+
+          /*=============productos=========*/
 
 
-        /*=============about us===============*/
+          .featured-products, .product-accessories .product-description, .product-miniature{
 
-        .texto-descriptivo {
-          color: #878787;
-          font-weight: 400;
-          margin-top: 0;
-          margin-bottom: 16px;
-          text-align: justify;
-        }
+          }
+          .product-price-and-shipping, .product-price-and-shipping {
 
-        /*=============about us==========*/
+          }
+          .product-miniature .product-container {
 
-        .product-title, .product-accessories, .product-miniature{
+          }
+          .product-thumbnail, .featured-products, .product-accessories, .product-miniature {
 
-        }
+          }
+          img, .featured-products img, .product-accessories img, .product-miniature img {
 
-        /*=============productos=========*/
+          }
+          .product-title a, .featured-products .product-title a, .product-accessories, .product-miniature {
 
+          }
+          .product-price-and-shipping, .featured-products .product-price-and-shipping, .product-accessories .product-price-and-shipping, .product-miniature .product-price-and-shipping {
 
-        .featured-products, .product-accessories .product-description, .product-miniature{
+          }
+          .products-section-title, .featured-products .products-section-title, .product-accessories .products-section-title, .product-miniature .products-section-title {
 
-        }
-        .product-price-and-shipping, .product-price-and-shipping {
+          }
+          .all-product-link, .featured-products .all-product-link, .product-accessories .all-product-link, .product-miniature .all-product-link {
 
-        }
-        .product-miniature .product-container {
-
-        }
-        .product-thumbnail, .featured-products, .product-accessories, .product-miniature {
-
-        }
-        img, .featured-products img, .product-accessories img, .product-miniature img {
-
-        }
-        .product-title a, .featured-products .product-title a, .product-accessories, .product-miniature {
-
-        }
-        .product-price-and-shipping, .featured-products .product-price-and-shipping, .product-accessories .product-price-and-shipping, .product-miniature .product-price-and-shipping {
-
-        }
-        .products-section-title, .featured-products .products-section-title, .product-accessories .products-section-title, .product-miniature .products-section-title {
-
-        }
-        .all-product-link, .featured-products .all-product-link, .product-accessories .all-product-link, .product-miniature .all-product-link {
-
-        }
+          }
 
 
-        /*==========productos homepage=========*/
+          /*==========productos homepage=========*/
 
-        .cover{
+          .cover{
 
-        }
-        .producto-imagen{
+          }
+          .producto-imagen{
 
-        }
-        .product-description{
+          }
+          .product-description{
 
-        }
-        .row-productos{
+          }
+          .row-productos{
 
-        }
-        .product-title{
+          }
+          .product-title{
 
-        }
-        .product-description{
+          }
+          .product-description{
 
-        }
-        .carousel .carousel-item .caption {
+          }
+          .carousel .carousel-item .caption {
 
-        }
-        .carousel-inner{
+          }
+          .carousel-inner{
 
-        }
-        .products-section-title{
+          }
+          .products-section-title{
 
-        }
+          }
 
 
 
-        /*========boton arriba=========*/
+          /*========boton arriba=========*/
 
 
-        .cd-top.cd-fade-out {
-          opacity: 0.8;
-        }
-        .cd-top.cd-is-visible {
-          visibility: visible;
-          opacity: 1;
-        }
-        .cd-top{
-          right: 20px;
-          bottom: 20px;
-          display: inline-block;
-          height: 40px;
-          width: 40px;
-          position: fixed;
-          bottom: 40px;
-          right: 10px;
-          box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px;
-          text-indent: 100%;
-          white-space: nowrap;
-          visibility: hidden;
-          opacity: 0;
-          overflow: hidden;
-          transition: 0.3s;
-        }
-        /* ====================== button style ======================== */
+          .cd-top.cd-fade-out {
+            opacity: 0.8;
+          }
+          .cd-top.cd-is-visible {
+            visibility: visible;
+            opacity: 1;
+          }
+          .cd-top{
+            right: 20px;
+            bottom: 20px;
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            position: fixed;
+            bottom: 40px;
+            right: 10px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px;
+            text-indent: 100%;
+            white-space: nowrap;
+            visibility: hidden;
+            opacity: 0;
+            overflow: hidden;
+            transition: 0.3s;
+          }
+          /* ====================== button style ======================== */
 
 
-        /*Codigo agregado del archivo s_banner_3*/
-        .carousel .carousel-item {
+          /*Codigo agregado del archivo s_banner_3*/
+          .carousel .carousel-item {
 
-        }
-        .sliderfill {
+          }
+          .sliderfill {
 
-        }
+          }
