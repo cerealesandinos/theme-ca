@@ -182,7 +182,7 @@ BODY {
           .form-inline .input-group {
           }
 
-          #footer > footer {
+          footer > #footer {
             h3, h4, h5  {
               color: white;
             }
@@ -192,6 +192,10 @@ BODY {
                 color: @colorPreset2_color4_light;
               }
             }
+          } //footer
+
+          .s_google_map .description {
+            background: rgb(214,191,221,.8);
           }
 
           #products_grid_before ul.nav-stacked li a:hover, #products_grid_before ul.nav-stacked li a:focus {
@@ -220,13 +224,16 @@ BODY {
           }
 
           #add_to_cart {
+            a {
+              color: white;
+            }
             background-color: @colorPreset2_color4;
             &:hover, &:active {
-              border-color: @colorPreset2_color4_light;
+              background-color: @colorPreset2_color4_light;
             }
           }
 
-          .btn, .input-group-addon {
+          .input-group-addon {
             color: white;
           }
 
