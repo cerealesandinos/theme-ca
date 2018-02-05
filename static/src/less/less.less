@@ -1,5 +1,9 @@
 /* CEREALES */
 
+BODY {
+  background: #f3f3f3;
+}
+
 /*========= FONTS ========= */
 
 @font-face {
@@ -122,10 +126,12 @@
   #wrapwrap {
     a {
       color: @colorPreset2_color3;
-      :hover, a:focus {
-        color: @colorPreset2_color3_dark;
-      }
+      &:hover, &:focus {
+      color: @colorPreset2_color3_dark;
     }
+
+
+
 
     .navbar-default {
       background: @colorPreset2_color3;
@@ -134,7 +140,7 @@
       #top_menu {
         > li a {
           color: white;
-          :hover {
+          &:hover {
             color: @colorPreset2_color4_light;
           }
         }
@@ -146,14 +152,14 @@
 
           > li a {
             color: #555555;
-            :hover {
+            &:hover {
               color: @colorPreset2_color3_dark;
             }
           }
         }
         .navbar-nav {
           > .open > a, {
-            :hover, :focus, {
+            &:hover, &:focus, {
               background-color: @colorPreset2_color3_dark;
             }
           }
@@ -165,20 +171,24 @@
 
         .js_sale .breadcrumb li a {
           color: @colorPreset2_color3;
-          :hover {
+          &:hover {
             color: @colorPreset2_color3_dark;
           }
           } // end breadcrum
 
-          #add_to_cart {
-            background-color: @colorPreset2_color3;
-          }
+
           .form-inline .input-group {
           }
 
-          > #footer > footer .container {
+          #footer > footer {
             h3, h4, h5  {
               color: white;
+            }
+            a {
+              color: @colorPreset2_color4;
+              &:hover {
+                color: @colorPreset2_color4_light;
+              }
             }
           }
 
@@ -188,14 +198,13 @@
           }
 
           #website_sale_recommended_products {
-            border-top: 3px solid @colorPreset2_color3;
             h3 {
               color: @colorPreset2_color3;
             }
           }
 
           #products_grid_before .category-name {
-            background-color: @colorPreset2_color4;
+            color: @colorPreset2_color4;
           }
 
           #product_details {
@@ -204,14 +213,25 @@
             }
           }
 
-          .btn {
-            padding: 10px 20px;
-            border-width: 0px;
-            display: inline-block;
-            line-height: 1.25;
-            border: 1px solid transparent;
-            border-radius: 0;
+          .text-muted {
+            color: @colorPreset2_color3_light;
+          }
+
+          #add_to_cart {
+            background-color: @colorPreset2_color4;
+            &:hover, &:active {
+              border-color: @colorPreset2_color4_light;
+            }
+          }
+
+          .btn, .input-group-addon {
             color: white;
+          }
+
+          .o_alternative_product {
+            &:hover {
+              opacity: .8;
+            }
           }
           .btn-primary {
             box-shadow: 2px 2px 11px 0 rgba(0,0,0,.1);
@@ -222,11 +242,7 @@
           }
 
           .btn-lg{
-            background-color: @colorPreset2_color4;
 
-            .btn-success:active {
-              border-color: @colorPreset2_color4_light;
-            }
           }
 
           #product_details {
@@ -238,6 +254,16 @@
           }
 
           } // end wrapwrap
+
+          .o_chat_window .o_chat_header {
+            background-color: @colorPreset2_color4;
+
+          }
+
+          #wrapwrap .s_big_icon_circle_icon {
+            background-color: @colorPreset2_color3;
+          }
+
           /*================Espaciados===========*/
 
           #wrapwrap {
@@ -247,17 +273,15 @@
             .control-label {
               margin: 5px 20px;
             }
+            h1, h2, h3, h4, h5 {
+                margin: 0;
+            }
           }
 
 
           /*=============about us===============*/
 
           .texto-descriptivo {
-            color: #878787;
-            font-weight: 400;
-            margin-top: 0;
-            margin-bottom: 16px;
-            text-align: justify;
           }
 
           /*=============about us==========*/
@@ -331,7 +355,6 @@
 
 
           /*========boton arriba=========*/
-
 
           .cd-top.cd-fade-out {
             opacity: 0.8;
