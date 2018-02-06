@@ -6,6 +6,7 @@
 
   'data': [
   'views/assets.xml',
+  'views/theme_loftspace_sale.products_categories.xml'
   ],
 
   'css': ['static/src/css/css.css'],

@@ -11,12 +11,12 @@
 
       <xpath expr="." position="inside">
 <!--These links will be called when loading your Odoo -->
-            <link rel="stylesheet" href="/theme-ca/static/src/css/css.css" type="text/css"/>
+            
         </xpath>
 
       <!-- Add an element after the top menu  -->
       <xpath expr="//div[@id='wrapwrap']/header/div" position="after">
-        
+
       </xpath>
     </template>
   </data>
