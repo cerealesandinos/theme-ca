@@ -14,4 +14,9 @@
 
   'category': 'Generic Modules/Others',
   'depends': ['website','theme_loftspace','theme_beauty'],
+
+  'installable': True,
+  'application': False,
+  'auto_install': False,
+  'qweb': [],
 }
