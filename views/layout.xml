@@ -14,15 +14,9 @@
             <link rel="stylesheet" href="/theme-ca/static/src/css/css.css" type="text/css"/>
         </xpath>
 
-        
-
       <!-- Add an element after the top menu  -->
       <xpath expr="//div[@id='wrapwrap']/header/div" position="after">
-        <div class="container">
-          <div class="alert alert-info mt16" role="alert">
-            <h1>Welcome</h1> to our <strong>website</strong>!
-          </div>
-        </div>
+        
       </xpath>
     </template>
   </data>

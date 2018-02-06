@@ -5,7 +5,6 @@
   'author':'Esteban Tapia',
 
   'data': [
-  'views/layout.xml',
   'views/assets.xml',
   ],
 
