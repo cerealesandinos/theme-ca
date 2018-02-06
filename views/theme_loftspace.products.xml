@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<data inherit_id="website_sale.products" name="Products" priority="15">
+            <xpath expr="//*[contains(@id, 'products_grid')]//*[1]" position="before">
+                <t t-call="theme_loftspace_sale.search"/>
+            </xpath>
+
+            <!-- Add pager to the top and bottom -->
+            <xpath expr="//div[@id='products_grid']/*[1]" position="before">
+                <div class="products_pager">
+                    <div class="row">
+                        <t t-call="website_sale.pricelist_list"/>
+                        <t t-call="website.pager"/>
+                    </div>
+                </div>
+            </xpath>
+            <xpath expr="//div[@id='products_grid']/*[last()]" position="after">
+                <div class="products_pager">
+                    <div class="row">
+                        <t t-call="website_sale.pricelist_list"/>
+                        <t t-call="website.pager"/>
+                    </div>
+                </div>
+            </xpath>
+
+            <!-- Remove original pager -->
+            <xpath expr="//div[contains(@class, 'products_pager')]" position="replace">
+            </xpath>
+            <xpath expr="//div[contains(@class, 'oe_website_sale')]/div[@class='products_pager']" position="replace">
+            </xpath>
+            <xpath expr="//div[contains(@class, 'js_sale')]/*[last()]" position="replace">
+                <div class="oe_structure"/>
+            </xpath>
+        </data>
+
+        

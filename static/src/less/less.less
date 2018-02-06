@@ -1,46 +1,401 @@
+/* CEREALES */
 
+BODY {
+  background: #f3f3f3;
+}
 
+/*========= FONTS ========= */
 
+@font-face {
+  font-family: 'monstro_solidregular';
+  src: url('//cerealesandinos.com/webfonts/monstro_solid-webfont.woff2') format('woff2'),  url('//cerealesandinos.com/webfonts/monstro_solid-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AdriaSlab-BoldUprightItalic';
+  src: url('webfonts/329A23_0_0.eot');
+  src: url('webfonts/329A23_0_0.eot?#iefix') format('embedded-opentype'), url('//cerealesandinos.com/webfonts/329A23_0_0.woff2') format('woff2'), url('//cerealesandinos.com/webfonts/329A23_0_0.woff') format('woff'), url('//cerealesandinos.com/webfonts/329A23_0_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AdriaSlab-Medium';
+  src: url('webfonts/329A23_1_0.eot');
+  src: url('webfonts/329A23_1_0.eot?#iefix') format('embedded-opentype'), url('//cerealesandinos.com/webfonts/329A23_1_0.woff2') format('woff2'), url('//cerealesandinos.com/webfonts/329A23_1_0.woff') format('woff'), url('//cerealesandinos.com/webfonts/329A23_1_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'KGDefyingGravityBounce';
+  src: url('webfonts/329A23_2_0.eot');
+  src: url('webfonts/329A23_2_0.eot?#iefix') format('embedded-opentype'), url('//cerealesandinos.com/webfonts/329A23_2_0.woff2') format('woff2'), url('//cerealesandinos.com/webfonts/329A23_2_0.woff') format('woff'), url('//cerealesandinos.com/webfonts/329A23_2_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'NexaScript-Bold';
+  src: url('webfonts/329A23_3_0.eot');
+  src: url('webfonts/329A23_3_0.eot?#iefix') format('embedded-opentype'), url('//cerealesandinos.com/webfonts/329A23_3_0.woff2') format('woff2'), url('//cerealesandinos.com/webfonts/329A23_3_0.woff') format('woff'), url('//cerealesandinos.com/webfonts/329A23_3_0.ttf') format('truetype');
+}
 
-
-/* END CEREALES */
-
-/* ================== COLOR PRESET 2 ================= */
-
-@colorPreset2_color1:             #D6BFDD; // soft purple
-@colorPreset2_color1_dark:      darken(@colorPreset2_color1, 10%);
-@colorPreset2_color1_light:     lighten(@colorPreset2_color1, 5%);
-@colorPreset2_color2:             #B9DCD2; // light turquoise
-@colorPreset2_color2_dark:         darken(@colorPreset2_color2, 10%);
-@colorPreset2_color2_light:        lighten(@colorPreset2_color2, 10%);
-@colorPreset2_color3:            #EF426F; // corporate
-@colorPreset2_color3_dark:         darken(@colorPreset2_color3, 10%);
-@colorPreset2_color3_light:        lighten(@colorPreset2_color3, 30%);
-@colorPreset2_color4:            #fdd26e; // yellow
-@colorPreset2_color4_dark:      darken(@colorPreset2_color4, 10%);
-@colorPreset2_color4_light:        lighten(@colorPreset2_color4, 5%);
-
-/*================Espaciados===========*/
-
+@font-face {
+  font-family: 'nexa_rust_extrasfree';
+  src: url('nexarustextras-free-webfont.woff2');
+  src: url('nexarustextras-free-webfont.woff2') format('woff2'), url('//cerealesandinos.com/webfonts/nexarustextras-free-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 #wrapwrap {
-        font-family: "AdriaSlab-Medium";
-    h1, h2, h3, h4, h5, h6 {
-        font-family: "monstro_solidregular";
-        font-weight: 700;
-        line-height: 1.1em;
-    }
-    h2{
-        font-size: 66px;
-        font-weight: 600;
-    }
-    .h3 {
-        text-transform: capitalize;
-        font-size: 16px ;
-        color: white !important;
-        padding-top: 11.2px;
-        font-weight: 700px;
+  font-family: "AdriaSlab-Medium";
 
-    }
+  .monstro, h1, h4, h5, h6 {
+    font-family: "monstro_solidregular";
+    font-weight: 700;
+    line-height: 1.1em;
+  }
 
+  .nexa-m, h2{
+    font-family: "NexaScript-Bold";
+    text-transform: none;
+  }
+
+  .defying-l, h3 {
+    font-family: "KGDefyingGravityBounce";
+  }
+
+
+  .nexa-r {
+    font-family: 'nexa_rust_extrasfree';
+  }
+
+  .linea-top {
+    padding-top: 40px;
+    border-top: 3px dotted rgb(239, 66, 111);
+    border-color: rgb(239, 66, 111);
+  }
+
+
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h4, h5 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: inherit;
+  }
+
+  #products_grid_before .category-name {
+    text-transform: none;
+    font-size: 2em;
+  }
+
+  } //end wrapwrap
+
+  /*cambios hechos en el archivo theme*/
+
+  /* ================== COLOR PRESET 2 ================= */
+
+  @colorPreset2_color1:             #D6BFDD; // soft purple
+  @colorPreset2_color1_dark:      darken(@colorPreset2_color1, 10%);
+  @colorPreset2_color1_light:     lighten(@colorPreset2_color1, 5%);
+  @colorPreset2_color2:             #B9DCD2; // light turquoise
+  @colorPreset2_color2_dark:         darken(@colorPreset2_color2, 10%);
+  @colorPreset2_color2_light:        lighten(@colorPreset2_color2, 10%);
+  @colorPreset2_color3:            #EF426F; // corporate
+  @colorPreset2_color3_dark:         darken(@colorPreset2_color3, 10%);
+  @colorPreset2_color3_light:        lighten(@colorPreset2_color3, 20%);
+  @colorPreset2_color4:            #fdd26e; // yellow
+  @colorPreset2_color4_dark:      darken(@colorPreset2_color4, 10%);
+  @colorPreset2_color4_light:        lighten(@colorPreset2_color4, 5%);
+
+  /* Correct bugs */
+
+  .navbar-right .dropdown-menu {
+    left: auto !important;
+    right: auto !important;
+  }
+
+  @media (min-width: 1200px) {
+    #products_grid.col-md-9 .oe-height-2
+    {height: 300px}
 }
+
+  /*======= Color aplicado ===== */
+  #wrapwrap {
+    a {
+      color: @colorPreset2_color3;
+      &:hover, &:focus {
+      color: @colorPreset2_color3_dark;
+    }
+    }//end a
+
+    .navbar-default {
+      background: @colorPreset2_color3;
+      box-shadow: 0px 0px 20px black;
+
+      #top_menu {
+        > li a {
+          color: white;
+          &:hover {
+            color: @colorPreset2_color4_light;
+          }
+        }
+        .dropdown-menu {
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+          border-width: 3px 0px 0px;
+          border-style: solid;
+          border-color: @colorPreset2_color4;
+
+          > li a {
+            color: #555555;
+            &:hover {
+              color: @colorPreset2_color3_dark;
+            }
+          }
+        } // dropdown
+        .navbar-nav {
+          > .open > a, {
+            &:hover, &:focus, {
+              background-color: @colorPreset2_color3_dark;
+            }
+          }
+        }
+
+        } //end top menu
+        } // end navbar
+
+        .js_sale .breadcrumb li a {
+          color: @colorPreset2_color3;
+          &:hover {
+            color: @colorPreset2_color3_dark;
+          }
+          } // end breadcrum
+
+
+          .form-inline .input-group {
+          }
+
+          footer > #footer {
+            h3, h4, h5  {
+              color: white;
+            }
+            a {
+              color: @colorPreset2_color4;
+              &:hover {
+                color: @colorPreset2_color4_light;
+              }
+            }
+          } //footer
+
+          .s_google_map .description {
+            background: rgb(214,191,221,.8);
+          }
+
+          #products_grid_before ul.nav-stacked li a:hover, #products_grid_before ul.nav-stacked li a:focus {
+            background-color: @colorPreset2_color3;
+            color: @colorPreset2_color4_dark;
+          }
+
+          #website_sale_recommended_products {
+            h3 {
+              color: @colorPreset2_color3;
+            }
+          }
+
+          #products_grid_before .category-name {
+            color: @colorPreset2_color4;
+          }
+
+          #product_details {
+            H1 {
+              color: @colorPreset2_color3;
+            }
+          }
+
+          .text-muted {
+            color: @colorPreset2_color3_light;
+          }
+
+          #add_to_cart {
+            a {
+              color: white;
+            }
+            background-color: @colorPreset2_color4;
+            &:hover, &:active {
+              background-color: @colorPreset2_color4_light;
+            }
+          }
+
+          .input-group-addon {
+            color: white;
+          }
+
+          .o_alternative_product {
+            &:hover {
+              opacity: .8;
+            }
+          }
+          .btn-primary {
+            box-shadow: 2px 2px 11px 0 rgba(0,0,0,.1);
+            text-transform: uppercase;
+            padding: 8px 20px;
+            border-color: transparent;
+            color: white;
+            background-color: @colorPreset2_color4;
+              &:hover {
+                background-color: @colorPreset2_color4_light;
+              }
+          }
+
+          #product_details {
+            .alert-success {
+              margin: 10px 0;
+              background-color: transparent;
+              border-color: transparent;
+            }
+          }
+
+          } // end wrapwrap
+
+          .o_chat_window .o_chat_header {
+            background-color: @colorPreset2_color4;
+
+          }
+
+          #wrapwrap .s_big_icon_circle_icon {
+            background-color: @colorPreset2_color3;
+          }
+
+          /*================Espaciados===========*/
+
+          #wrapwrap {
+            .sombra {
+              text-shadow: 2px 2px 5px rgba(0,0,0,0.75);
+            }
+            .control-label {
+              margin: 5px 20px;
+            }
+            h1, h2, h3, h4, h5 {
+                margin: 0;
+            }
+          }
+
+
+          /*=============about us===============*/
+
+          .texto-descriptivo {
+          }
+
+          /*=============about us==========*/
+
+          .product-title, .product-accessories, .product-miniature{
+
+          }
+
+          /*=============productos=========*/
+
+
+          .featured-products, .product-accessories .product-description, .product-miniature{
+
+          }
+          .product-price-and-shipping, .product-price-and-shipping {
+
+          }
+          .product-miniature .product-container {
+
+          }
+          .product-thumbnail, .featured-products, .product-accessories, .product-miniature {
+
+          }
+          img, .featured-products img, .product-accessories img, .product-miniature img {
+
+          }
+          .product-title a, .featured-products .product-title a, .product-accessories, .product-miniature {
+
+          }
+          .product-price-and-shipping, .featured-products .product-price-and-shipping, .product-accessories .product-price-and-shipping, .product-miniature .product-price-and-shipping {
+
+          }
+          .products-section-title, .featured-products .products-section-title, .product-accessories .products-section-title, .product-miniature .products-section-title {
+
+          }
+          .all-product-link, .featured-products .all-product-link, .product-accessories .all-product-link, .product-miniature .all-product-link {
+
+          }
+
+
+          /*==========productos homepage=========*/
+
+          .cover{
+
+          }
+          .producto-imagen{
+
+          }
+          .product-description{
+
+          }
+          .row-productos{
+
+          }
+          .product-title{
+
+          }
+          .product-description{
+
+          }
+          .carousel .carousel-item .caption {
+
+          }
+          .carousel-inner{
+
+          }
+          .products-section-title{
+
+          }
+
+
+
+          /*========boton arriba=========*/
+
+          .cd-top.cd-fade-out {
+            opacity: 0.8;
+          }
+          .cd-top.cd-is-visible {
+            visibility: visible;
+            opacity: 1;
+          }
+          .cd-top{
+            right: 20px;
+            bottom: 20px;
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            position: fixed;
+            bottom: 40px;
+            right: 10px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 10px;
+            text-indent: 100%;
+            white-space: nowrap;
+            visibility: hidden;
+            opacity: 0;
+            overflow: hidden;
+            transition: 0.3s;
+          }
+          /* ====================== button style ======================== */
+
+
+          /*Codigo agregado del archivo s_banner_3*/
+          .carousel .carousel-item {
+
+          }
+          .sliderfill {
+
+          }
