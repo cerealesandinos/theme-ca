@@ -5,9 +5,7 @@
     <xpath expr="link[last()]" position="after">
         <link href="/theme-ca/static/src/less/less.less" rel="stylesheet" type="text/less"/>
     </xpath>
-    <xpath expr="//views[@string='option_font_ubuntu']" position="replace">
-        <link />
-    </xpath>
+
 </template>
 
 </data>
