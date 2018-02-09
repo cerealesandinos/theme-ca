@@ -1,7 +1,7 @@
 {
   'name':'CA theme',
   'description': 'LESS to adapt Loftspace Theme and Beauty Theme applying CA Corporate style',
-  'version':'1.1',
+  'version':'1.2',
   'author':'Esteban Tapia',
 
   'data': [
