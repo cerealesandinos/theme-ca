@@ -151,6 +151,7 @@
             border-width: 3px 0px 0px;
             border-style: solid;
             border-color: @colorPreset2_color4;
+            margin-top: 0;
 
             > li a {
               color: #555555;
@@ -160,7 +161,7 @@
             }
           } // dropdown
           .navbar-nav {
-            > .open > a, {
+            > .open > .dropdown-toggle, {
               &:hover, &:focus, {
                 background-color: @colorPreset2_color3_dark;
               }
@@ -186,7 +187,7 @@
               }
             }
 
-            footer > #footer {
+            footer {
               h3, h4, h5  {
                 color: white;
               }
@@ -278,9 +279,11 @@
 
               .btn-success {
                 background-color: @colorPreset2_color4;
+                border-color: @colorPreset2_color4;
                 color: white;
                 &:HOVER {
                   background-color: @colorPreset2_color4_light;
+                  border-color: @colorPreset2_color4_light;
                 }
               }
 
@@ -304,6 +307,9 @@
                   color: @colorPreset2_color3;
                 }
 
+                .js_subscribe .form-control {
+                  height: 43px;
+                }
 
               .o_website_quote .bs-sidebar {
                 background-color: rgba(150, 150, 220, 0.3);
