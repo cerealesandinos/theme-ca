@@ -1,7 +1,7 @@
   /* CEREALES */
 
   BODY {
-    background: #f3f3f3;
+    background: white;
   }
 
   /*========= FONTS ========= */
@@ -139,7 +139,7 @@
       }
       }//end a
 
-      .navbar-default {
+      .navbar-static-top {
         background: @colorPreset2_color3;
         box-shadow: 0px 0px 20px black;
 
@@ -206,13 +206,18 @@
               background: transparent;
               border: 1px dotted;
               border-color: @colorPreset2_color3;
+              color: @colorPreset2_color3;
               &:hover {
-                background-color: @colorPreset2_color4;
+                background-color: @colorPreset2_color3_light;
                 color: white !important;
               }
             }
 
             INPUT[type=text].form-control {
+
+            }
+
+            .website_forum {
 
             }
 
@@ -222,6 +227,14 @@
 
             .help-block {
               clear: both;
+            }
+
+            .o_blog_cover_container  {
+              margin-top: 40px;
+            }
+            .website_blog .o_blog_post_complete.o_sharing_links {
+              margin: auto;
+              padding: 50px;
             }
 
             footer {
@@ -401,7 +414,10 @@
               h1, h2, h3, h4, h5 {
                   margin: 0;
               }
-            }
+              .website_blog .o_blog_cover_container.cover > .blog_title, .website_blog .o_blog_cover_container.cover_footer > .blog_title {
+                text-shadow: 2px 4px 5px #333;
+              }
+            }//end wrapwrap
 
 
             /*=============about us===============*/
